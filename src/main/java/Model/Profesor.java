@@ -10,11 +10,7 @@ package Model;
  */
 public class Profesor extends Persona {
     
-    public Profesor(String nombre, String direccion, String telefono, String fechaNacimiento) {
-        super(nombre, direccion, telefono, fechaNacimiento);
-    }
-    
-       private String cedula;
+    private String cedula;
     private String area;
     private double salarioHora;
     private int horasMes;
@@ -28,27 +24,23 @@ public class Profesor extends Persona {
         this.horasMes = horasMes;
     }
 
-    // Método para calcular el pago mensual (con el 20%)
-    public double calcularPagoMensual() {
+    public double calcularSalarioMensual() {
         double pago = salarioHora * horasMes;
-        double extra = pago * 0.20; // preparación de clase
+        double extra = pago * 0.20; 
         return pago + extra;
     }
 
-    // Método para calcular las prestaciones
     public double calcularPrestaciones() {
-        return calcularPagoMensual() * 0.17;
+        return calcularSalarioMensual() * 0.17;
     }
 
-    // Polimorfismo: sobreescritura
     @Override
     public void mostrarInfo() {
         super.mostrarInfo();
-        System.out.println("Cédula: " + cedula);
-        System.out.println("Área: " + area);
-        System.out.println("Pago mensual: " + calcularPagoMensual());
-        System.out.println("Prestaciones: " + calcularPrestaciones());
+        System.out.println("cedula: " + cedula);
+        System.out.println("area: " + area);
+        System.out.println("salario mensual: " + calcularSalarioMensual());
+        System.out.println("prestaciones: " + calcularPrestaciones());
         System.out.println("-----------------------------");
     }
-    
 }
