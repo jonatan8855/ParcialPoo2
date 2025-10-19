@@ -10,26 +10,17 @@ package Model;
  */
 public class Estudiante  extends Persona{
     
-    public Estudiante(String nombre, String direccion, String telefono, String fechaNacimiento) {
-        super(nombre, direccion, telefono, fechaNacimiento);
-    }
-    
     private String codigo;
-    private String programa;
 
-    public Estudiante(String nombre, String direccion, String telefono, String fechaNacimiento,
-                      String codigo, String programa) {
+    public Estudiante(String nombre, String direccion, String telefono, String fechaNacimiento, String codigo) {
         super(nombre, direccion, telefono, fechaNacimiento);
         this.codigo = codigo;
-        this.programa = programa;
     }
 
- 
     @Override
     public void mostrarInfo() {
         super.mostrarInfo();
         System.out.println("Código: " + codigo);
-        System.out.println("Programa: " + programa);
         System.out.println("-----------------------------");
     }
 }
