@@ -25,8 +25,12 @@ public class Persona {
     public void mostrarInfo() {
         System.out.println("Nombre: " + nombre);
         System.out.println("Dirección: " + direccion);
-        System.out.println("Teléfono: " + telefono);
+        System.out.println("Telefono: " + telefono);
         System.out.println("Fecha de nacimiento: " + fechaNacimiento);
+    }
+
+    String getNombre() {
+        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
     }
     
 }
