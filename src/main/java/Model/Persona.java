@@ -10,4 +10,23 @@ package Model;
  */
 public class Persona {
     
+      protected String nombre;
+    protected String direccion;
+    protected String telefono;
+    protected String fechaNacimiento;
+
+    public Persona(String nombre, String direccion, String telefono, String fechaNacimiento) {
+        this.nombre = nombre;
+        this.direccion = direccion;
+        this.telefono = telefono;
+        this.fechaNacimiento = fechaNacimiento;
+    }
+
+    public void mostrarInfo() {
+        System.out.println("Nombre: " + nombre);
+        System.out.println("Dirección: " + direccion);
+        System.out.println("Teléfono: " + telefono);
+        System.out.println("Fecha de nacimiento: " + fechaNacimiento);
+    }
+    
 }
