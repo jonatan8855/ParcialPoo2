@@ -40,7 +40,7 @@ public class Persona {
         return fechaNacimiento;
     }
 
-    // ======== MÉTODO PARA MOSTRAR INFO ========
+     
 
     public void mostrarInfo() {
         System.out.println("Nombre: " + nombre);
@@ -48,4 +48,6 @@ public class Persona {
         System.out.println("Teléfono: " + telefono);
         System.out.println("Fecha de nacimiento: " + fechaNacimiento);
     }
+   
+ 
 }
