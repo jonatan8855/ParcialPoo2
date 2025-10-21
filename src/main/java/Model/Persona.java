@@ -10,7 +10,7 @@ package Model;
  */
 public class Persona {
     
-      protected String nombre;
+     protected String nombre;
     protected String direccion;
     protected String telefono;
     protected String fechaNacimiento;
@@ -22,15 +22,30 @@ public class Persona {
         this.fechaNacimiento = fechaNacimiento;
     }
 
+   
+
+    public String getNombre() {
+        return nombre;
+    }
+
+    public String getDireccion() {
+        return direccion;
+    }
+
+    public String getTelefono() {
+        return telefono;
+    }
+
+    public String getFechaNacimiento() {
+        return fechaNacimiento;
+    }
+
+    // ======== MÉTODO PARA MOSTRAR INFO ========
+
     public void mostrarInfo() {
         System.out.println("Nombre: " + nombre);
         System.out.println("Dirección: " + direccion);
-        System.out.println("Telefono: " + telefono);
+        System.out.println("Teléfono: " + telefono);
         System.out.println("Fecha de nacimiento: " + fechaNacimiento);
     }
-
-    String getNombre() {
-        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
-    }
-    
 }

@@ -10,7 +10,7 @@ package Model;
  */
 public class Profesor extends Persona {
     
-    private String cedula;
+private String cedula;
     private String area;
     private double salarioHora;
     private int horasMes;
@@ -34,13 +34,20 @@ public class Profesor extends Persona {
         return calcularSalarioMensual() * 0.17;
     }
 
-    @Override
-    public void mostrarInfo() {
-        super.mostrarInfo();
-        System.out.println("cedula: " + cedula);
-        System.out.println("area: " + area);
-        System.out.println("salario mensual: " + calcularSalarioMensual());
-        System.out.println("prestaciones: " + calcularPrestaciones());
-        System.out.println("-----------------------------");
+    // Getters
+    public String getCedula() {
+        return cedula;
+    }
+
+    public String getArea() {
+        return area;
+    }
+
+    public double getSalarioHora() {
+        return salarioHora;
+    }
+
+    public int getHorasMes() {
+        return horasMes;
     }
 }
