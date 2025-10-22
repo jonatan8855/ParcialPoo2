@@ -42,7 +42,6 @@ public class ColegioIntegracionTest {
 
         colegio.agregarEstudiante(e1);
         colegio.agregarEstudiante(e2);
-
         assertNotNull(e1);
         assertNotNull(e2);
         assertEquals("20252", e2.getCodigo());

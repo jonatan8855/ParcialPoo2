@@ -39,13 +39,11 @@ public class Persona {
     public String getFechaNacimiento() {
         return fechaNacimiento;
     }
-
-     
-
+ 
     public void mostrarInfo() {
         System.out.println("Nombre: " + nombre);
-        System.out.println("Dirección: " + direccion);
-        System.out.println("Teléfono: " + telefono);
+        System.out.println("Direccion: " + direccion);
+        System.out.println("Telefono: " + telefono);
         System.out.println("Fecha de nacimiento: " + fechaNacimiento);
     }
    

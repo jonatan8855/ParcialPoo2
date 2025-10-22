@@ -20,7 +20,7 @@ public class Instituto {
 
         do {
             opcion = Integer.parseInt(JOptionPane.showInputDialog("""
-                    === MENÚ PRINCIPAL ===
+                    === MENU PRINCIPAL ===
                     1. Registrar Profesor
                     2. Registrar Estudiante
                     3. Ver Profesores (ordenados por salario)

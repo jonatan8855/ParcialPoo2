@@ -24,7 +24,7 @@ public class Estudiante  extends Persona{
     @Override
     public void mostrarInfo() {
         super.mostrarInfo();
-        System.out.println("Código: " + codigo);
+        System.out.println("Codigo: " + codigo);
         System.out.println("-----------------------------");
     }
 

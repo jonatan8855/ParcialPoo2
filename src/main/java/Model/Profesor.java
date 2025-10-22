@@ -33,8 +33,7 @@ private String cedula;
     public double calcularPrestaciones() {
         return calcularSalarioMensual() * 0.17;
     }
-
-    // Getters
+ 
     public String getCedula() {
         return cedula;
     }

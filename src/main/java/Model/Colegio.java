@@ -44,7 +44,7 @@ public class Colegio {
     public void mostrarProfesoresPorSalario() {
     
         if (numProfesores == 0) {
-            System.out.println("No hay profesores registrados.");
+            System.out.println("no hay profesores registrados.");
             return;
         } else {
         }

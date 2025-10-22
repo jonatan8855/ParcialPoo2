@@ -17,7 +17,7 @@ public class ProfesorTest {
      @Test
     public void testCalcularSalarioMensual() {
         Profesor p = new Profesor("Juan", "Calle 123", "3214567890", "01/01/1990",
-                "1001", "Matemáticas", 50, 100);
+                "1001", "Matematicas", 50, 100);
         
         double esperado = 50 * 100 * 1.20; // 20% extra
         assertEquals(esperado, p.calcularSalarioMensual(), 0.001);
@@ -26,7 +26,7 @@ public class ProfesorTest {
     @Test
     public void testCalcularPrestaciones() {
         Profesor p = new Profesor("Juan", "Calle 123", "3214567890", "01/01/1990",
-                "1001", "Matemáticas", 50, 100);
+                "1001", "Matematicas", 50, 100);
         
         double esperado = (50 * 100 * 1.20) * 0.17;
         assertEquals(esperado, p.calcularPrestaciones(), 0.001);

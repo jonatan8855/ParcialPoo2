@@ -25,7 +25,6 @@ public class ColegioTest {
 
         colegio.agregarProfesor(prof);
         colegio.agregarEstudiante(est);
-
         assertNotNull(prof);
         assertNotNull(est);
     } 
