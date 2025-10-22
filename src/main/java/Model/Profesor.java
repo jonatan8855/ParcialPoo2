@@ -49,4 +49,18 @@ private String cedula;
     public int getHorasMes() {
         return horasMes;
     }
+    
+    @Override
+public void mostrarInfo() {
+    super.mostrarInfo();
+    System.out.println("Cedula: " + cedula);
+    System.out.println("Area: " + area);
+    System.out.println("Salario por hora: " + salarioHora);
+    System.out.println("Horas trabajadas en el mes: " + horasMes);
+    System.out.println("Salario mensual (con 20% preparacion): " + calcularSalarioMensual());
+    System.out.println("Prestaciones sociales (17% del salario): " + calcularPrestaciones());
+    System.out.println("---------------------------------------");
+}
+
+    
 }
